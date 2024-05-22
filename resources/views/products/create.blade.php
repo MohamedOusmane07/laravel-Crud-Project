@@ -7,19 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-<div class="bg-dark py-0">
-    <h3 class="text-white text-center">Laravel Crud Project</h3>
+<div class="bg bg-secondary">
+    <h3 class="text-white text-center">Product Management App</h3>
 </div>
 <div class="container">
     <div class="row justify-content-center mt-4">
         <div class="col-md-10 d-flex justify-content-end">
-            <a href="{{route('products.index')}}" class="btn btn-dark">Back</a>
+            <a href="{{route('products.index')}}" class="btn bg bg-secondary text-white">Back</a>
         </div>
     </div>
     <div class="row d-flex justify-content-center">
         <div class="col-md-10">
             <div class="card border-0 shadow-lg my-3">
-                <div class="card-header bg-dark">
+                <div class="card-header bg bg-secondary">
                     <h3 class="text-white">Create Product</h3>
                 </div>
                 <form enctype="multipart/form-data" action="{{ route('products.store')  }}" method="post">
